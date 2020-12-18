@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recibido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=2, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="recibido.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    crossorigin ="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  </head>
+  <body>
+
+    <div class="container my-5 text-center">
+
+
+    	<div class = "mt-5" id = "tablas">
+    <!-- Table with colgroup and col -->
+    <h1> Resultado </h1>
+
+
+
+
+
+    <table class="table table-bordered">
+      <thead background = "fondo.jpg">
+          <tr>
+            <th rowspan = "2" id = "estado" style="color:#ffffff">estado</th>
+            <th colspan = "2" id = "alimento" style="color:#ffffff">  alimento  </th>
+          </tr>
+          <tr>
+            <th colspan = "2" style="color:#ffffff">Alimento</th>
+          </tr>
+        </thead>
+          <tr>
+            <th colspan = "2" >Calorias(kCal)</th>
+            <td id = "calorias"> valor </td>
+          </tr>
+
+          <tr>
+            <th colspan = "2">Grasas (g)</th>
+            <td id = "grasas">valor </td>
+          </tr>
+          <tr>
+            <th colspan = "2">Proteína(g)</th>
+            <td id = "proteina"> valor </td>
+          </tr>
+          <tr>
+            <th colspan = "2">Carbohirdratos(g)</th>
+            <td id = "carbohidratos">valor </td>
+          </tr>
+        </table>
+
+
+        <script type="text/javascript">
+
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const alimento = urlParams.get('alimento')
+          var estado = urlParams.get('image')
+          const calorias = urlParams.get('calorias')
+          const grasas = urlParams.get('grasas')
+          const proteina = urlParams.get('proteina')
+          const carbohidratos = urlParams.get('carbohidratos')
+
+          if(estado == "true"){
+          document.getElementById("estado").innerHTML = '<img src = "bien.png" width = "80px" height = "80px">';
+          }
+          else{
+            document.getElementById("estado").innerHTML = '<img src = "sad.jpg" width = "80px" height = "80px">';
+          }
+
+          document.getElementById("alimento").innerHTML = alimento;
+          document.getElementById("calorias").innerHTML = calorias;
+          document.getElementById("grasas").innerHTML = grasas;
+          document.getElementById("proteina").innerHTML = proteina;
+          document.getElementById("carbohidratos").innerHTML = carbohidratos;
+
+
+
+        </script>
+
+
+
+
+  </body>
+</html>

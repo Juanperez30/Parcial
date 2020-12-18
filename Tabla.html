@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grilla</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+	crossorigin ="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="tabla.js"></script>
+
+</head>
+<body>
+
+<div class="container my-5 text-center">
+
+	<div class = "mt-5" >
+
+
+<h1> Tabla de Calorias </h1>
+		<table id="tabla" class="table table-hover" >
+      <caption>Contenido nutricional por cada 100 g de alimento</caption>
+	  <thead>
+	    <tr >
+	      <th scope="col">Alimento</th>
+	      <th scope="col">Calorias(kCal)</th>
+	      <th scope="col">Grasas(g)</th>
+	      <th scope="col">Proteína(g)</th>
+				<th scope="col">Carbohirdratos(g)</th>
+				<th scope="col">ok</th>
+				<th scope="col">Opciones</th>
+
+	    </tr>
+			<tr>
+
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="col" >arandano</th>
+          <th scope="col" id = calorias>49</th>
+          <th scope="col">0.2</th>
+          <th scope="col">0.4</th>
+          <th scope="col">12.7</th>
+          <th scope="col" id = "estado"><image src= "bien.png" width = "50px" height = "50px"></th>
+          <th scope="col"><span style="color:#351aff" onclick="editar(this)">Editar</span></th>
+        </tr>
+
+        <tr>
+          <th scope="col">Platano</th>
+          <th scope="col">90</th>
+          <th scope="col">0.3</th>
+          <th scope="col">1.0</th>
+          <th scope="col">23.5</th>
+          <th scope="col" id = "estado"><image src= "sad.jpg" width = "50px" height = "50px"></th>
+          <th scope="col"><span style="color:#351aff" onclick="editar(this)">Editar</span></th>
+        </tr>
+
+        <tr>
+          <th scope="col">Cereza</th>
+          <th scope="col">46</th>
+          <th scope="col">0.4</th>
+          <th scope="col">0.9</th>
+          <th scope="col">10.9</th>
+          <th scope="col" id = "estado"><image src= "sad.jpg" width = "50px" height = "50px"></th>
+          <th scope="col"><span style="color:#351aff" onclick="editar(this)">Editar</span></th>
+        </tr>
+
+        <tr>
+          <th scope="col">Fresa</th>
+          <th scope="col">37</th>
+          <th scope="col">0.5</th>
+          <th scope="col">0.8</th>
+          <th scope="col">8.3</th>
+          <th scope="col" id = "estado"><image src= "bien.png" width = "50px" height = "50px"></th>
+          <th scope="col"><span style="color:#351aff" onclick="editar(this)">Editar</span></th>
+        </tr>
+
+      </tbody>
+
+
+      </table>
+
+
+
+  </body>
+</html>
